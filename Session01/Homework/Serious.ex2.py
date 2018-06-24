@@ -6,8 +6,9 @@ app = Flask(__name__)
 def user(username):
     user = {
 
-        "hera" : { "name": "Fullname Hera", "age": 18}
-        "dinh quy": { "name": "Dinh Cong Quy", "age": 20} }
+        "hera" : { "name": "Fullname Hera", "age": 18},
+        "dinhquy": { "name": "Dinh Cong Quy", "age": 20}
+    }
 
 
     return render_template('user.html', users=users, username=username)
