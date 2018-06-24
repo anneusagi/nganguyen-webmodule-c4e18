@@ -20,3 +20,6 @@ def bmi(weight, height):
 
     # return "bmi = {0} => {1}".format(bmi,condition)  #Without render_template
     return render_template('bmi.html', bmi=bmi, condition=condition)  #With render_template
+    
+if __name__ == '__main__':
+  app.run(debug=True)

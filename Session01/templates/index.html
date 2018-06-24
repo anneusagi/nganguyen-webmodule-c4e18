@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>C4E 18 Blog</h1>
+    {% for p in posts %}
+    
+    <!-- jinja2 -->
+    <!-- cú pháp bắt buộc -->
+    <!-- cách khác là thay = dấu chấm -->
+    <h3>{{ p.title }}</h3>    
+    <p>{{ p.content }}</p>
+    {% if p.gender == 1 %}
+        Mr
+    <i>By: {{ p.author }}</i>
+    {% elif p.gender == 0 %}
+        Ms
+    <i>By: {{ p.author }}</i>
+    {% endif %}
+    <hr>
+    {% endfor %}
+
+</body>
+</html>

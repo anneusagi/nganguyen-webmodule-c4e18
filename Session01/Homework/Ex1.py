@@ -3,8 +3,11 @@ app = Flask(__name__)
 
 @app.route('/about-me')
 def aboutme(): 
-    return render_template("Name: Nga Nguyen, Travelholic, Shopaholic, Catlover, Daydreamer, Edmlover")
+    return render_template("about.html")
 
-@app.route('/school')
-def school():
-    return redirect("http://techkids.vn")
+# @app.route('/school')
+# def school():
+#     return redirect("http://techkids.vn")
+
+if __name__ == '__main__':
+  app.run(debug=True)
