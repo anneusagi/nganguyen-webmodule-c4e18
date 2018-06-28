@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Admin playground</h1>
+    <table border="1px">
+        <thead> 
+            <th>STT</th>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>gender</th>
+            <th>height</th>
+            <th>phone</th>
+            <th>address</th>
+            <th>status</th>
+            <th></th>
+        </thead>
+        <tbody>
+            {% for service in all_service %}
+                <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ service.name }}</td>
+                        <td>{{ service.dob }}</td>
+                        <td>{{ "Nữ" if service.gender == 0 else "Nam" }}
+                        </td>
+                        <td>{{ service.height }}</td>
+                        <td>{{ service.phone }}</td>
+                        <td>{{ service.address }}</td>
+                        <td>{{ "Rảnh" if service.status else "Bận" }}</td>
+                        <td>
+                            <a href="">Sửa</a>
+                            <a href="{{ url_for('delete', service_id=service.id)}}">Xóa</a>
+
+                        </td>
+                        <!-- #kiểu dữ liệu True False không cần so sánh -->
+                </tr>
+            {% endfor %}
+        </tbody>
+
+
+    </table>
+
+
+</body>
+</html>
