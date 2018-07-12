@@ -1,0 +1,28 @@
+.bg-lightskyblue {
+    background-color: lightskyblue;
+}
+
+.w-100px {
+    width: 100px;
+}
+
+.h-100px {
+    height: 100px;
+}
+
+
+.m-10px {
+    margin: 10px;
+}
+
+.bg-lightgray {
+    background-color: lightgray;
+}
+
+#flex-box {
+    display: flex;
+    flex-flow: row-reverse;
+    /* justify-content:; */
+    height: 500px;
+    align-items: flex-end;
+}

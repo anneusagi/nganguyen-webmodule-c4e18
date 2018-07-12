@@ -1,0 +1,43 @@
+.text-success {
+    color: darkgreen;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-200px{
+    width: 200px;
+
+}
+
+.bg-blue {
+    background-color: lightblue;
+}
+
+.h-100px {
+    height: 100px;
+
+}
+
+.bg-lightcoral {
+    background-color: lightcoral;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+#box-model {
+    /* border: 2px solid darkgreen; */
+    margin: 40px;
+    padding: 50px;     
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.h-50px {
+    height: 50px;
+}

@@ -2,7 +2,6 @@ from flask import *
 import mlab
 from models.service import Service
 
-
 app = Flask(__name__)
 
 #0. Create connection
@@ -64,6 +63,8 @@ def create():
     )
     
     new_service.save()
+
+
 
 
 if __name__ == '__main__':

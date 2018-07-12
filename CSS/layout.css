@@ -1,0 +1,39 @@
+.w-200px {
+    width: 1000px;
+}
+
+.h-100px {
+    height: 100px;
+}
+
+.bg-blue {
+    background-color: rgba(35, 104, 168, 0.349);
+}
+
+.bg-coral {
+    background-color: coral;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.h-1000px {
+    height: 1000px;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.w-70 {
+    width: 69%;
+}
+
+#box-model {
+    margin: 40px;
+}
